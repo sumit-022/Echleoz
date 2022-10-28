@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="css/login.css">
+<script src="https://kit.fontawesome.com/a6a8fc63a8.js" crossorigin="anonymous"></script>
+<%- include('partials/header.ejs') %> 
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<meta name="google-signin-client_id" content="101170088299-557dfvbhntvhod2fea66f3b1ehukcoef.apps.googleusercontent.com">
+<section>
+    <div class="login">
+        <div class="log-in">
+            <h1>LOGIN</h1>
+            <p>Login through</p>
+            <div class="social">
+                <i class="fa-brands fa-facebook"></i>
+                <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <p>or</p>
+            <form action="/login" method="post">
+                <input type="text" placeholder="Username" name="email">
+                <input type="password" placeholder="Password" id="password" name="password">
+                <div class="check">
+                    <label for="checkbox"></label>
+                    <input type="checkbox" id="checkbox" name="checkbox"> Show Password
+                </div>
+                <button>Sign in</button>
+                <p>or, create a <a href="/signup">new account</a></p>
+            </form>
+        </div>
+    </div>
+</section>
+<script src="js/login.js"></script>
+<script>
+    function onSignIn(googleUser) {
+    var profile = googleUser.getBasicProfile();
+    console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+    console.log('Name: ' + profile.getName());
+    console.log('Image URL: ' + profile.getImageUrl());
+    console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+}
+</script>
+<%- include('partials/footer.ejs') %> 

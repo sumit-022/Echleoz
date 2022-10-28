@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #322c4d;
+}
+.login{
+    height: calc(100vh - 10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+.log-in{
+    height: 500px;
+    width: 600px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.log-in p{
+    margin: 10px 0;
+}
+
+form input[type='text'], form input[type='password']{
+    display: block;
+    margin: 10px 0;
+    width: 250px;
+    height: 30px;
+    border-radius: 20px;
+    border: solid black;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.check{
+    display: block;
+    margin: 10px 0;
+}
+
+form button {
+  background-color: initial;
+  background-image: linear-gradient(-180deg, #FF7E31, #E62C03);
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,-apple-system,system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
+  height: 40px;
+  line-height: 40px;
+  outline: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 100%;
+  z-index: 9;
+  border: 0;
+  transition: box-shadow .2s;
+}
+
+form button:hover {
+  box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
+}
+
+.log-in i{
+    padding: 0 5px;
+    font-size: 25px;
+}
+
+.log-in i:nth-child(1){
+    color: #4867aa;
+}
+
+.log-in i:nth-child(2){
+    color: #dc3c2a;
+}
+
+.log-in i:nth-child(3){
+    color: #0077b5;
+}
+
+.login h1{
+    font-size: 2rem;
+}

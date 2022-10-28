@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/header.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/"><img src="/Assets/Ecleoz logo.png" alt="" height="80px" width="80px"></a>
+        </div>
+        <div class="links">
+            <ul>
+                <li>
+                    <a href="#">Men</a>
+                    <i class="fa-solid fa-angle-down"></i>
+                </li>
+                <li>
+                    <a href="#">Women</a>
+                    <i class="fa-solid fa-angle-down"></i>
+                </li>
+                <li>
+                    <a href="#">Footwear</a>
+                    <i class="fa-solid fa-angle-down"></i>
+                </li>
+                <li>
+                    <a href="#">Accesories</a>
+                    <i class="fa-solid fa-angle-down"></i>
+                </li>
+            </ul>
+        </div>
+        <div class="sign">
+            <a href="<%= isLogged ? "/logout" : "/login" %>"><button class="log"><%= isLogged ? "Logout" : "Login" %></button></a>
+            <a href="/signup"><button class="reg">Sign Up</button></a>
+        </div>
+    </header>
